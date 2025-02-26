@@ -34,10 +34,9 @@ It is recommended to run this code inside a `conda` environment with `python3.10
 
 Latest tested combination of the following packages for Python 3 are required:
 
-- PyTorch (2.0.0)
-- Sklearn (1.2.2)
-- NumPy (1.23.5)
-- SciPy (1.10.1)
+- pytorch (2.0.0)
+- captum (0.7.0)
+- numpy (1.24.3)
 
 To install all the requirements, run the following command:
 
