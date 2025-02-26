@@ -52,4 +52,8 @@ Once the environment is configured, the programs can be run by the following com
  python Main.py
    ```
 
+### Citation
+
+If you use this code for your research, please cite our paper.
+
 *Thank you for your interest in our research.*
