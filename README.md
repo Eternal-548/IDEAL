@@ -6,14 +6,6 @@ This repository provides a reference implementation of *IDEAL* as described in t
 
 ## Installation and Execution
 
-### From Source
-
-Start by grabbing this source code:
-
-```
-git clone https://github.com/Eternal-548/IDEAL.git
-```
-
 ### Environment
 
 It is recommended to run this code inside a `conda` environment with `python3.10`.
@@ -38,22 +30,26 @@ Latest tested combination of the following packages for Python 3 are required:
 - captum (0.7.0)
 - numpy (1.24.3)
 
-To install all the requirements, run the following command:
-
-```
-python -m pip install -r requirements.txt
-```
-
 ### Execution
 
 Once the environment is configured, the programs can be run by the following command:
 
+Train base models without explanation supervision
+
    ```sh
- python Main.py
+ python main.py --train_model --dataset cicids2017
    ```
 
-### Citation
+Retrain base models with explanation supervision
 
-If you use this code for your research, please cite our paper.
+   ```sh
+ python main.py --train_with_exp_loss --dataset cicids2017 --exp_method inputgrad --exp_lambda 1.5
+   ```
 
-*Thank you for your interest in our research.*
+Test model
+
+   ```sh
+ python main.py --test_model --dataset cicids2017
+   ```
+
+
